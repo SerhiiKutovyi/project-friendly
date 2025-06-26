@@ -1,0 +1,24 @@
+.about {
+}
+.container {
+}
+.about-subtitle {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+.about-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+}
+.about-text {
+  display: none;
+}
