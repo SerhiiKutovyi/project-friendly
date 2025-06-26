@@ -1,4 +1,6 @@
 .about {
+  padding-top: 64px;
+  padding-bottom: 110px;
 }
 .container {
 }
@@ -9,6 +11,7 @@
   line-height: 1.5;
   text-align: center;
   color: #fff;
+  margin-bottom: 16px;
 }
 .about-title {
   font-family: 'Comfortaa', sans-serif;
