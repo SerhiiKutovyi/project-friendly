@@ -11,6 +11,10 @@
   row-gap: 40px;
 }
 
+.feedbacks-raiting-star .icon path{
+  fill: var(--color-emerald);
+}
+
 .feedbacks-list
   li:nth-child(2).feedbacks-item
   .feedbacks-raiting
