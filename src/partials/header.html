@@ -2,9 +2,9 @@
   <div class="container header-container">
     <nav>
       <a class="header-logo" href="./header.html">
-        <img src="/images-header/logo-header.svg" alt="logo" />
+        <img src="../img/logo.svg" alt="logo" />
       </a>
-      <!-- <ul class="nav-list">
+      <ul class="nav-list">
         <li class="nav-item">
           <a href="" class="nav-link">Про нас</a>
         </li>
@@ -23,9 +23,9 @@
         <li class="nav-item">
           <a href="" class="nav-link">Контакти</a>
         </li>
-      </ul> -->
+      </ul>
     </nav>
-    <!-- <address class="contacts">
+    <address class="contacts">
       <ul class="contacts-list">
         <li class="contacts-item">
           <a class="contacts-link" href="tel:+380999091122"
@@ -38,20 +38,20 @@
           >
         </li>
       </ul>
-    </address> -->
-    <button class="burger-btn" type="button">
-      <svg class="burger-icon" width="32" height="32">
-        <use href=""></use>
+    </address>
+    <button class="burger-btn" type="button" data-menu-open>
+      <svg class="burger-icon" width="22" height="16">
+        <use href="/img/icons.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
-  <div class="mob-menu">
+  <div class="mob-menu" data-menu>
     <a class="mob-menu-logo" href="./header.html">
-      <img src="/images-header/logo-header.svg" alt="logo" />
+      <img src="../img/logo.svg" alt="logo" />
     </a>
-    <button type="button" class="mob-close">
-      <svg class="mob-close-icon" width="32" height="32">
-        <use href=""></use>
+    <button type="button" class="mob-close" data-menu-close>
+      <svg class="mob-close-icon" width="16" height="16">
+        <use href="../img/icons.svg#icon-close"></use>
       </svg>
     </button>
     <nav class="mob-menu-nav">
