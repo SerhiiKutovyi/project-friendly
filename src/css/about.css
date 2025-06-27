@@ -46,7 +46,6 @@
   .about {
     padding-top: 80px;
     padding-bottom: 80px;
-
     background-image: url(../img/about/about-tab-1x.jpg);
   }
 
@@ -69,7 +68,6 @@
 
     background-image: url(../img/about/about-dex-x1.jpg);
   }
-
   .about-title {
     max-width: 440px;
     margin: 0 auto;
