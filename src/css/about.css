@@ -1,9 +1,17 @@
 .about {
-  padding-top: 64px;
-  padding-bottom: 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/gallery/about/about-mob-x1.jpg);
+  margin: 0 auto;
 }
-.container {
+
+@media screen and (min-resolution: 2x) {
+  .about {
+    background-image: url(../img/gallery/about/about-mob-x2.jpg);
+  }
 }
+
 .about-subtitle {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
@@ -21,7 +29,45 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: #fff;
+  margin-bottom: 20px;
 }
 .about-text {
-  display: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  max-height: 288px;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    max-height: 325px;
+
+    background-image: url(../img/gallery/about/about-tab-1x.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .about {
+      background-image: url(../img/gallery/about/about-tab-2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .about {
+    padding-top: 112px;
+    padding-bottom: 94px;
+
+    background-image: url(../img/gallery/about/about-dex-x1.jpg);
+
+    max-height: 348px;
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .about {
+      background-image: url(../img/gallery/about/about-dex-x2.jpg);
+    }
+  }
 }
