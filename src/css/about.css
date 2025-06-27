@@ -3,7 +3,6 @@
   background-position: center;
   background-size: cover;
   background-image: url(../img/gallery/about/about-mob-x1.jpg);
-  margin: 0 auto;
 }
 
 @media screen and (min-resolution: 2x) {
@@ -43,8 +42,6 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    max-height: 325px;
-
     background-image: url(../img/gallery/about/about-tab-1x.jpg);
   }
 
@@ -52,6 +49,9 @@
     .about {
       background-image: url(../img/gallery/about/about-tab-2x.jpg);
     }
+  }
+
+  .about-text {
   }
 }
 
@@ -61,8 +61,6 @@
     padding-bottom: 94px;
 
     background-image: url(../img/gallery/about/about-dex-x1.jpg);
-
-    max-height: 348px;
   }
 
   @media screen and (min-resolution: 2x) {
