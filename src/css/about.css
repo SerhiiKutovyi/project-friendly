@@ -2,12 +2,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../img/gallery/about/about-mob-x1.jpg);
+  background-image: url(../img/about/about-mob-x1.jpg);
 }
 
 @media screen and (min-resolution: 2x) {
   .about {
-    background-image: url(../img/gallery/about/about-mob-x2.jpg);
+    background-image: url(../img/about/about-mob-x2.jpg);
   }
 }
 
@@ -42,12 +42,12 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    background-image: url(../img/gallery/about/about-tab-1x.jpg);
+    background-image: url(../img/about/about-tab-1x.jpg);
   }
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(../img/gallery/about/about-tab-2x.jpg);
+      background-image: url(../img/about/about-tab-2x.jpg);
     }
   }
 
@@ -60,12 +60,12 @@
     padding-top: 112px;
     padding-bottom: 94px;
 
-    background-image: url(../img/gallery/about/about-dex-x1.jpg);
+    background-image: url(../img/about/about-dex-x1.jpg);
   }
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(../img/gallery/about/about-dex-x2.jpg);
+      background-image: url(../img/about/about-dex-x2.jpg);
     }
   }
 }
