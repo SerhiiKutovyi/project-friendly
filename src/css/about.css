@@ -20,6 +20,7 @@
   color: #fff;
   margin-bottom: 16px;
 }
+
 .about-title {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
@@ -30,6 +31,7 @@
   color: #fff;
   margin-bottom: 20px;
 }
+
 .about-text {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
@@ -42,6 +44,8 @@
 
 @media screen and (min-width: 768px) {
   .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-image: url(../img/about/about-tab-1x.jpg);
   }
 
@@ -52,15 +56,22 @@
   }
 
   .about-text {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .about {
     padding-top: 112px;
     padding-bottom: 94px;
 
     background-image: url(../img/about/about-dex-x1.jpg);
+  }
+  .about-title {
+    max-width: 440px;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 
   @media screen and (min-resolution: 2x) {
