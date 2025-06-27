@@ -76,6 +76,7 @@
   height: 32px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .mob-close-icon {
