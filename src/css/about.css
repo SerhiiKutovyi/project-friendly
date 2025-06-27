@@ -2,12 +2,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../img/gallery/about/about-mob-x1.jpg);
+  background-image: url(../img/about/about-mob-x1.jpg);
 }
 
 @media screen and (min-resolution: 2x) {
   .about {
-    background-image: url(../img/gallery/about/about-mob-x2.jpg);
+    background-image: url(../img/about/about-mob-x2.jpg);
   }
 }
 
@@ -20,6 +20,7 @@
   color: #fff;
   margin-bottom: 16px;
 }
+
 .about-title {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
@@ -30,6 +31,7 @@
   color: #fff;
   margin-bottom: 20px;
 }
+
 .about-text {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
@@ -42,30 +44,41 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    background-image: url(../img/gallery/about/about-tab-1x.jpg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-image: url(../img/about/about-tab-1x.jpg);
   }
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(../img/gallery/about/about-tab-2x.jpg);
+      background-image: url(../img/about/about-tab-2x.jpg);
     }
   }
 
   .about-text {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .about {
     padding-top: 112px;
     padding-bottom: 94px;
 
-    background-image: url(../img/gallery/about/about-dex-x1.jpg);
+    background-image: url(../img/about/about-dex-x1.jpg);
+  }
+
+  .about-title {
+    max-width: 440px;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 
   @media screen and (min-resolution: 2x) {
     .about {
-      background-image: url(../img/gallery/about/about-dex-x2.jpg);
+      background-image: url(../img/about/about-dex-x2.jpg);
     }
   }
 }
