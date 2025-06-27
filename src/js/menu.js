@@ -1,3 +1,5 @@
+
+
 (() => {
     const refs = {
       // Додати атрибут data-modal-open на кнопку відкриття
@@ -16,3 +18,4 @@
       refs.modal.classList.toggle('is-open');
     }
   })();
+
