@@ -1,0 +1,40 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.hero-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: var(--color-scheme-2-text);
+    max-width: 288px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-scheme-2-text);
+    max-width: 288px;
+    margin-bottom: 24px;
+}
+
+
+
+.hero-btn {
+    max-width: 288px;
+    height: 50px;
+    margin-bottom: 24px;
+}
+
+
+.hero-page {
+    border-radius: 40px;
+    width: 288px;
+    height: 285px;
+}
