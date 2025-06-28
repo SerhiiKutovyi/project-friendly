@@ -25,7 +25,7 @@
 }
 
 .support-form-input {
-  width: 288px;
+  width: 100%;
   height: 42px;
   padding: 8px 12px;
   border-radius: 6px;
@@ -66,7 +66,7 @@ textarea.invalid::placeholder {
 }
 
 .support-form-textarea {
-  width: 288px;
+  width: 100%;
   height: 180px;
   border: 1px solid rgba(3, 10, 6, 0.15);
   border-radius: 6px;
@@ -79,10 +79,42 @@ outline: transparent;
 
 .support-submit-btn {
     margin-bottom: 24px;
-    max-width: 288px;
+    width: 288px;
     height: 50px;
 }
 
 .support-img {
     border-radius: 40px;
 }
+
+@media screen and (min-width:768px) {
+  .support-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+    .support-title {
+      width: 468px;
+    }
+
+        .support-submit-btn {
+          width: 249px;
+        }
+
+}
+
+@media screen and (min-width:1440px) {
+  .support-container{
+    display: flex;
+    justify-content: space-between;
+  }
+.support-title {
+  font-size: 48px;
+width: 644px;
+}
+
+.support-submit-btn {
+  width: 198px;
+}
+}
+
