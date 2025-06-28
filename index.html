@@ -546,10 +546,10 @@
     <div>
       <h2 class="section-title support-title">Залишились питання? Зв'яжіться з нами!</h2>
       <p class="support-text">Ми тут, щоб допомогти!</p>
-      <form class="support-form" name="user-support-form">
+      <form class="support-form" name="user-support-form" novalidate>
         <div class="support-form-wraper">
           <label class="support-form-text" for="user-name">Ім'я</label>
-          <input class="support-form-input" type="text" name="user-name" id="user-name" placeholder="Іван" minlength="5" maxlength="64" required>
+          <input class="support-form-input" type="text" name="user-name" id="user-name" placeholder="Іван" minlength="2" maxlength="64" required>
           <p class="error-text">Error text</p>
         </div>
         <div class="support-form-wraper">
@@ -560,7 +560,7 @@
         </div>
         <div class="support-form-wraper">
           <label class="support-form-text" for="user-text">Повідомлення</label>
-          <textarea class="support-form-textarea" name="user-text" id="user-text" placeholder="Введіть своє повідомлення..."></textarea>
+          <textarea class="support-form-textarea" name="user-text" id="user-text" placeholder="Введіть своє повідомлення..." maxlength="500"></textarea>
           <p class="error-text">Error text</p>
         </div>
         <button class="support-submit-btn btn" type="submit">Надіслати</button>
@@ -665,5 +665,6 @@
   </div>
 </footer>
 
+    <script src="./js/form-validation.js"></script>
   </body>
 </html>
