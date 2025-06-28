@@ -44,7 +44,7 @@
 @media only screen and (min-width: 768px) {
   .gallery {
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 62px;
   }
 
   .gallery-title {
