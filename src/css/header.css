@@ -34,6 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform var(--transition);
+  &:hover,
+  &:focus {
+    transform: scale(1.2) rotate(180deg);
+  }
 }
 
 .burger-icon {
@@ -79,6 +84,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  transition: transform var(--transition);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2) rotate(180deg);
+  }
 }
 
 .mob-close-icon {
@@ -156,7 +168,7 @@
     display: block;
     color: var(--color-primary-black);
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
   }
 
   .contacts {
@@ -171,7 +183,7 @@
   .contacts-link {
     display: block;
     color: var(--color-primary-black);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
   }
 
   .nav-link:hover,
@@ -183,7 +195,7 @@
 
   .nav-link:active,
   .contacts-link:active {
-    color: var(--color-emerald-darkest);
+    color: var(--color-bg-main);
     opacity: 0.6;
   }
 }
