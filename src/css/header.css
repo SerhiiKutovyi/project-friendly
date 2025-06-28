@@ -187,4 +187,10 @@
   .contacts-link:focus {
     opacity: 0.5;
   }
+
+  .nav-link:active,
+  .contacts-link:active {
+    color: #113916;
+    opacity: 0.6;
+  }
 }
