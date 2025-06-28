@@ -1,2 +1,92 @@
 .footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #75d281;
+}
+
+.footer-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-logo-link {
+  width: 280px;
+  height: 121px;
+}
+
+.footer-logo-img {
+  width: 273px;
+  height: 102px;
+  margin: auto auto;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-nav-link {
+  color: #030a06;
+}
+
+.footer-nav-item:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-contacts-link {
+  color: #030a06;
+}
+
+.footer-contacts-list {
+  margin-bottom: 24px;
+}
+
+.footer-contacts {
+  padding-top: 24px;
+}
+
+.footer-paragraf {
+  font-size: 14px;
+  padding-bottom: 16px;
+  padding-left: 23px;
+  padding-right: 23px;
 }
