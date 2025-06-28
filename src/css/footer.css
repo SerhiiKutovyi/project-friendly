@@ -90,3 +90,7 @@
   padding-left: 23px;
   padding-right: 23px;
 }
+
+.second-footer-container {
+  border-top: 1px solid rgba(3, 10, 6, 0.15);
+}
