@@ -65,6 +65,12 @@
   color: var(--color-primary-black);
 }
 
+.feedbacks-list
+  li:nth-child(4).feedbacks-item
+  .feedbacks-raiting {
+  margin-bottom: 24px;
+}
+
 @media (min-width: 768px) {
   .feedbacks {
     padding-top: 64px;
@@ -104,4 +110,10 @@
   .feedbacks-item {
     width: calc((100% - 24px) / 4);
   }
+
+  .feedbacks-list
+  li:nth-child(4).feedbacks-item
+  .feedbacks-item-text {
+  margin-bottom: 52px;
+}
 }
