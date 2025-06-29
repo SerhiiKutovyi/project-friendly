@@ -1,5 +1,36 @@
-<section class="">
-  <div class="container">
-    <h2>Hello support</h2>
+<section class="support-section" id="support">
+  <div class="container support-container">
+    <div>
+      <h2 class="section-title support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <p class="support-text">Ми тут, щоб допомогти!</p>
+      <form class="support-form" name="user-support-form" novalidate>
+        <div class="support-form-wraper">
+          <label class="support-form-text" for="user-name">Ім'я</label>
+          <input class="support-form-input" type="text" name="user-name" id="user-name" placeholder="Іван" minlength="2" maxlength="64" required>
+          <p class="error-text">Error text</p>
+        </div>
+        <div class="support-form-wraper">
+          <label class="support-form-text" for="user-email">Електронна пошта</label>
+          <input class="support-form-input" type="email" name="user-email" id="user-email" placeholder="hello@ecotote.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+            <p class="error-text">Error text</p>
+        </div>
+        <div class="support-form-wraper">
+          <label class="support-form-text" for="user-text">Повідомлення</label>
+          <textarea class="support-form-textarea" name="user-text" id="user-text" placeholder="Введіть своє повідомлення..." maxlength="500"></textarea>
+          <p class="error-text">Error text</p>
+        </div>
+        <button class="support-submit-btn btn" type="submit">Надіслати</button>
+      </form>
+    </div>
+    <picture>
+      <source media="(min-width: 1440px)"
+        srcset="/img/support/ecobag-desk-min.jpg 1x, /img/support/ecobag-desk@2x-min.jpg 2x">
+      <source media="(min-width: 768px)"
+        srcset="/img/support/ecobag-tab-min.jpg 1x, /img/support/ecobag-tab@2x-min.jpg 2x">
+      <source media="(max-width: 767px)"
+        srcset="../img/support/ecobag-mob-min.jpg 1x, /img/support/ecobag-mob@2x-min.jpg 2x">
+      <img class="support-img" src="/img/support/ecobag-desk-min.jpg" alt="A studio space with eco tote bag on a work table.">
+    </picture>
   </div>
 </section>
