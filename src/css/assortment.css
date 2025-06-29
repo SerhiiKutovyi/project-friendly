@@ -1,102 +1,101 @@
 .assortment {
-    background: #EBF8ED;
-    text-align: center;
-    font-family: sans-serif;
-    max-width: 767px;
+  background: #ebf8ed;
+  text-align: center;
+  font-family: sans-serif;
+  max-width: 767px;
 }
 .assortment-h2 {
-    height: 43px;
-    margin-bottom: 32px;
-    font-size: 36px;
-    text-align: center;
+  height: 43px;
+  margin-bottom: 32px;
+  font-size: 36px;
+  text-align: center;
 }
 
 @media screen and (min-wigth: 1440px) {
-    .assortment-h2 {
-        height: 58px;
-        font-size: 48px;
-        margin-top: 64px;
-    } 
+  .assortment-h2 {
+    height: 58px;
+    font-size: 48px;
+    margin-top: 64px;
   }
+}
 @media screen and (min-wigth: 768px) {
-    .assortment-h2 {
-        margin-top: 64px;
-    }
+  .assortment-h2 {
+    margin-top: 64px;
+  }
 }
 
 .assortment-ul {
-    list-style-type: none;
-    flex-wrap: wrap;
-    text-align: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .assortment-li {
-    margin: 40px 16px;
-    background-color: #EBF8ED;
-    flex-wrap: wrap;
+  margin: 40px 16px;
+  background-color: #ebf8ed;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-    .ssortment-li {
-        max-width: calc((100% - 24px)/ 2)
-    }
+  .ssortment-li {
+    max-width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .assortment-li {
-        max-width: calc((100% -72px)/4);
-    }
+  .assortment-li {
+    max-width: calc((100% -72px) / 4);
+  }
 }
 .assortment-div {
-    max-width: 767px;
-    display: block;
+  max-width: 767px;
+  display: block;
 }
 
 .img-assortment {
-    border-radius: 32px;
+  border-radius: 32px;
 }
 
 .assortment-h3 {
-    margin-top: 16px;
-    font-size: 18px;
+  margin-top: 16px;
+  font-size: 18px;
 }
 
 .assortment-p {
-    font-weight: 400;
-    font-size: 14px;
-    padding-bottom: 8px;
-    margin: auto 16px;
-    text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 8px;
+  margin: auto 16px;
+  text-align: center;
 }
 
 .assortment-h4 {
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 8px;
-    margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .button-assortment {
-    font-weight: 400;
-    font-style: 16px;
-    line-height: 160%;
-    color: #030a06;
-    background-color: #EBF8ED;
-    border-radius: 6px;
-    padding: 7px 117.5px;
-    cursor: pointer;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 160%;
+  color: #030a06;
+  background-color: #ebf8ed;
+  border-radius: 6px;
+  padding: 7px 117.5px;
+  cursor: pointer;
 }
 .button-assortment:hover {
-    background-color: #030a06;
-    color: #fff;
+  background-color: #030a06;
+  color: #fff;
 }
 
 .button-assortment:focus {
-    outline: 1px solid #030a06;
-
+  outline: 1px solid #030a06;
 }
 
 .button-assortment:active {
-    background-color: #030a06;
-    color: #fff;
-    transform: translateY(2px);
+  background-color: #030a06;
+  color: #fff;
+  transform: translateY(2px);
 }
