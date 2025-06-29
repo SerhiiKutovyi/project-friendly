@@ -15,11 +15,19 @@
     .assortment-h2 {
         height: 58px;
         font-size: 48px;
-    }   }
+        margin-top: 64px;
+    } 
+  }
+@media screen and (min-wigth: 768px) {
+    .assortment-h2 {
+        margin-top: 64px;
+    }
+}
 
 .assortment-ul {
     list-style-type: none;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .assortment-li {
