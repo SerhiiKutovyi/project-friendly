@@ -4,45 +4,52 @@
   font-family: sans-serif;
   max-width: 767px;
 }
-.assortment-h2 {
+.assortment-title {
   height: 43px;
   margin-bottom: 32px;
   font-size: 36px;
   text-align: center;
 }
 
-@media screen and (min-wigth: 1440px) {
-  .assortment-h2 {
+@media screen and (min-width: 1440px) {
+  .assortment-title {
     height: 58px;
     font-size: 48px;
     margin-top: 64px;
   }
 }
-@media screen and (min-wigth: 768px) {
-  .assortment-h2 {
+@media screen and (min-width: 768px) {
+  .assortment-title {
     margin-top: 64px;
   }
 }
 
-.assortment-ul {
-  list-style-type: none;
+.assortment-list {
+  display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
+  gap: 32px;
+}
+@media screen and (min-width:768px){
+  .assortment-list {
+    gap: 24px;
+  }
 }
 
-.assortment-li {
+.assortment-list-item {
   margin: 40px 16px;
   background-color: #ebf8ed;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-  .ssortment-li {
+  .assortment-list-item {
     max-width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .assortment-li {
+  .assortment-list-item {
     max-width: calc((100% -72px) / 4);
   }
 }
@@ -55,12 +62,12 @@
   border-radius: 32px;
 }
 
-.assortment-h3 {
+.assortment-subtitle {
   margin-top: 16px;
   font-size: 18px;
 }
 
-.assortment-p {
+.assortment-text {
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 8px;
@@ -68,7 +75,7 @@
   text-align: center;
 }
 
-.assortment-h4 {
+.assortment-price {
   font-weight: 600;
   font-size: 20px;
   margin-top: 8px;
