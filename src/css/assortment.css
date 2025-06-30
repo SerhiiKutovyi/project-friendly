@@ -1,28 +1,33 @@
-.assortment {
-  background: #ebf8ed;
-  text-align: center;
-  font-family: sans-serif;
-  max-width: 767px;
+picture {
+  flex-shrink: 0;
+}
+.assortment-container {
+ padding-top: 32px;
+ padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .assortment-container {
+    padding-top: 64px;
+   padding-bottom: 64px;
+  }
 }
 .assortment-title {
   height: 43px;
-  margin-bottom: 32px;
   font-size: 36px;
   text-align: center;
 }
-
+@media screen and (min-width: 768px) {
+  .assortment-title{
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .assortment-title {
     height: 58px;
     font-size: 48px;
-    margin-top: 64px;
   }
 }
-@media screen and (min-width: 768px) {
-  .assortment-title {
-    margin-top: 64px;
-  }
-}
+
 
 .assortment-list {
   display: flex;
@@ -33,14 +38,18 @@
 }
 @media screen and (min-width:768px){
   .assortment-list {
+    flex-direction: row;
     gap: 24px;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .assortment-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+}
 .assortment-list-item {
-  margin: 40px 16px;
-  background-color: #ebf8ed;
-  flex-wrap: wrap;
+  background-color: var(--color-bg-main);
 }
 @media screen and (min-width: 768px) {
   .assortment-list-item {
@@ -50,7 +59,7 @@
 
 @media screen and (min-width: 1440px) {
   .assortment-list-item {
-    max-width: calc((100% -72px) / 4);
+    max-width: calc((100% -24px*3) / 4);
   }
 }
 .assortment-div {
@@ -68,9 +77,7 @@
 }
 
 .assortment-text {
-  font-weight: 400;
   font-size: 14px;
-  padding-bottom: 8px;
   margin: auto 16px;
   text-align: center;
 }
@@ -87,13 +94,13 @@
   font-style: 16px;
   line-height: 160%;
   color: #030a06;
-  background-color: #ebf8ed;
+  background-color: var(--color-bg-main);
   border-radius: 6px;
   padding: 7px 117.5px;
   cursor: pointer;
 }
 .button-assortment:hover {
-  background-color: #030a06;
+  background-color: var(--color-primary-black);
   color: #fff;
 }
 
@@ -102,7 +109,7 @@
 }
 
 .button-assortment:active {
-  background-color: #030a06;
+  background-color: var(--color-primary-black);
   color: #fff;
   transform: translateY(2px);
 }
