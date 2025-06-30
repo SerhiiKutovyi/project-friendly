@@ -1,6 +1,3 @@
-picture {
-  flex-shrink: 0;
-}
 .assortment-container {
  padding-top: 32px;
  padding-bottom: 32px;
@@ -15,6 +12,7 @@ picture {
   height: 43px;
   font-size: 36px;
   text-align: center;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .assortment-title{
@@ -27,17 +25,15 @@ picture {
     font-size: 48px;
   }
 }
-
-
 .assortment-list {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+flex-direction: column;
   justify-content: center;
   gap: 32px;
 }
 @media screen and (min-width:768px){
   .assortment-list {
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 24px;
   }
@@ -55,61 +51,76 @@ picture {
   .assortment-list-item {
     max-width: calc((100% - 24px) / 2);
   }
+    .assortment-list-item:nth-child(5) .assortment-div {
+      padding-top: 16px;
+      padding-bottom: 38px;
 }
-
+}
 @media screen and (min-width: 1440px) {
   .assortment-list-item {
     max-width: calc((100% -24px*3) / 4);
   }
+    .assortment-list-item:nth-child(5) .assortment-div,
+    .assortment-list-item:nth-child(8) .assortment-div {
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
 }
 .assortment-div {
-  max-width: 767px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 16px 0;
+  margin: 0 auto;
 }
 
 .img-assortment {
+  display: block;
   border-radius: 32px;
 }
 
 .assortment-subtitle {
-  margin-top: 16px;
   font-size: 18px;
 }
 
 .assortment-text {
+  font-weight: 400;
   font-size: 14px;
-  margin: auto 16px;
-  text-align: center;
+  padding-bottom: 8px;
 }
 
 .assortment-price {
   font-weight: 600;
   font-size: 20px;
-  margin-top: 8px;
-  margin-bottom: 16px;
 }
 
 .button-assortment {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+
   font-weight: 400;
   font-style: 16px;
   line-height: 160%;
-  color: #030a06;
+  color: var(--color-primary-black);
   background-color: var(--color-bg-main);
   border-radius: 6px;
-  padding: 7px 117.5px;
   cursor: pointer;
 }
 .button-assortment:hover {
   background-color: var(--color-primary-black);
-  color: #fff;
+  color: var(--color-white);
 }
 
 .button-assortment:focus {
-  outline: 1px solid #030a06;
+  outline: 1px solid var(--color-primary-black);
 }
 
 .button-assortment:active {
   background-color: var(--color-primary-black);
-  color: #fff;
+  color: var(--color-white);
   transform: translateY(2px);
 }
