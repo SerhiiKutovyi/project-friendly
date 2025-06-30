@@ -14,7 +14,6 @@
 .footer-logo-wrapper {
   width: 281px;
   height: 121px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,7 +189,6 @@
   }
 
   .footer-logo-wrapper {
-    margin-left: 0;
     margin-right: 176px;
   }
 
