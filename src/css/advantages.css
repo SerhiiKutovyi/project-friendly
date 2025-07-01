@@ -23,6 +23,12 @@
 
 .advantages-text {
   margin-bottom: 48px;
+  font-weight: 400;
+    font-size: 18px;
+  
+  
+    /* line-height: 29px; */
+    line-height: 1.6;
 }
 
 .advantages-list {
@@ -47,7 +53,11 @@
 }
 .advantages-item-text {
   font-weight: 400;
-  line-height: 1.6;
+    font-size: 16px;
+  
+    /* line-height: 26px; */
+    line-height: 1.6;
+    color: var(--color-scheme-1-text);
 }
 
 @media screen and (min-width: 768px) {
@@ -64,6 +74,7 @@
 
   .advantages-text {
     margin-bottom: 32px;
+    
   }
 
   .advantages-list {
