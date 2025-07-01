@@ -1,108 +1,144 @@
-.assortment {
-  background: #ebf8ed;
-  text-align: center;
-  font-family: sans-serif;
-  max-width: 767px;
+.assortment-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
+@media screen and (min-width: 768px) {
+  .assortment-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
 .assortment-title {
-  height: 43px;
-  margin-bottom: 32px;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
   text-align: center;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .assortment-title {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .assortment-title {
-    height: 58px;
     font-size: 48px;
-    margin-top: 64px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .assortment-title {
-    margin-top: 64px;
   }
 }
 
 .assortment-list {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  flex-direction: column;
   justify-content: center;
   gap: 32px;
 }
-@media screen and (min-width:768px){
+
+@media screen and (min-width: 768px) {
   .assortment-list {
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 24px;
   }
 }
 
-.assortment-list-item {
-  margin: 40px 16px;
-  background-color: #ebf8ed;
-  flex-wrap: wrap;
+@media screen and (min-width: 1440px) {
+  .assortment-list {
+    row-gap: 64px;
+  }
 }
+
+.assortment-list-item {
+  background-color: var(--color-bg-main);
+}
+
 @media screen and (min-width: 768px) {
   .assortment-list-item {
     max-width: calc((100% - 24px) / 2);
+  }
+  .assortment-list-item:nth-child(5) .assortment-div {
+    margin-bottom: 38px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .assortment-list-item {
-    max-width: calc((100% -72px) / 4);
+    max-width: calc((100% - 24px * 3) / 4);
+  }
+
+  .assortment-list-item:nth-child(5) .assortment-div,
+  .assortment-list-item:nth-child(8) .assortment-div {
+    margin-bottom: 27px;
   }
 }
+
+.assortment-picture {
+  margin-bottom: 16px;
+}
+
 .assortment-div {
-  max-width: 767px;
-  display: block;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .img-assortment {
+  display: block;
   border-radius: 32px;
 }
 
+@media screen and (min-width: 1440px) {
+  .assortment-list-item:nth-child(5) .assortment-picture,
+  .assortment-list-item:nth-child(8) .assortment-picture {
+    margin-bottom: 27px;
+  }
+}
+
 .assortment-subtitle {
-  margin-top: 16px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
   font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .assortment-text {
-  font-weight: 400;
   font-size: 14px;
-  padding-bottom: 8px;
-  margin: auto 16px;
-  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
 
 .assortment-price {
   font-weight: 600;
   font-size: 20px;
-  margin-top: 8px;
-  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
 .button-assortment {
-  font-weight: 400;
-  font-style: 16px;
-  line-height: 160%;
-  color: #030a06;
-  background-color: #ebf8ed;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--color-bg-main);
+  border: 1px solid var(--color-primary-black);
   border-radius: 6px;
-  padding: 7px 117.5px;
   cursor: pointer;
 }
+
 .button-assortment:hover {
-  background-color: #030a06;
-  color: #fff;
+  background-color: var(--color-primary-black);
+  color: var(--color-white);
 }
 
 .button-assortment:focus {
-  outline: 1px solid #030a06;
+  outline: 1px solid var(--color-primary-black);
 }
 
 .button-assortment:active {
-  background-color: #030a06;
-  color: #fff;
+  background-color: var(--color-primary-black);
+  color: var(--color-white);
   transform: translateY(2px);
 }
