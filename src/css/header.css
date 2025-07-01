@@ -184,6 +184,7 @@
     color: var(--color-primary-black);
     cursor: pointer;
     transition: color var(--transition);
+    padding: 23px 0;
   }
 
   .contacts {
@@ -199,6 +200,7 @@
     display: block;
     color: var(--color-primary-black);
     transition: color var(--transition);
+    padding: 23px 0;
   }
 
   .nav-link:hover,
