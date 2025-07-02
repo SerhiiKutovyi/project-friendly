@@ -25,6 +25,7 @@
 
   font-size: 18px;
   line-height: 1.6;
+
 }
 
 .advantages-list {
@@ -93,6 +94,8 @@
   .advantages-text {
     margin-bottom: 80px;
     max-width: 768px;
+    font-weight: 400;
+      font-size: 18px;
   }
 
   .advantages-list {
