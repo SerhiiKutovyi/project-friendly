@@ -14,7 +14,7 @@
             name="user-name"
             id="user-name"
             placeholder="Іван"
-            minlength="2"
+            minlength="5"
             maxlength="64"
             required
           />
@@ -37,6 +37,7 @@
         </div>
         <div class="support-form-wraper">
           <label class="support-form-text" for="user-text">Повідомлення</label>
+
           <textarea
             class="support-form-textarea"
             name="user-text"
@@ -44,38 +45,10 @@
             placeholder="Введіть своє повідомлення..."
             maxlength="500"
           ></textarea>
-          <p class="error-text">Error text</p>
         </div>
         <button class="support-submit-btn btn" type="submit">Надіслати</button>
       </form>
     </div>
-    <picture>
-      <source
-        media="(min-width: 1440px)"
-        srcset="
-          /img/support/ecobag-desk-min.jpg    1x,
-          /img/support/ecobag-desk@2x-min.jpg 2x
-        "
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          /img/support/ecobag-tab-min.jpg    1x,
-          /img/support/ecobag-tab@2x-min.jpg 2x
-        "
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          /img/support/ecobag-mob-min.jpg    1x,
-          /img/support/ecobag-mob@2x-min.jpg 2x
-        "
-      />
-      <img
-        class="support-img"
-        src="/img/support/ecobag-desk-min.jpg"
-        alt="A studio space with eco tote bag on a work table."
-      />
-    </picture>
+    <div class="img-container"></div>
   </div>
 </section>
