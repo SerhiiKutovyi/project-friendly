@@ -56,6 +56,22 @@
 .footer-social-icons {
   width: 32px;
   height: 32px;
+  transition: fill 0.3s ease;
+}
+
+.footer-social-link.instagram:hover .footer-social-icons,
+.footer-social-link.instagram:focus .footer-social-icons {
+  fill: #e1306c;
+}
+
+.footer-social-link.linkedin:hover .footer-social-icons,
+.footer-social-link.linkedin:focus .footer-social-icons {
+  fill: #0a66c2;
+}
+
+.footer-social-link.youtube:hover .footer-social-icons,
+.footer-social-link.youtube:focus .footer-social-icons {
+  fill: #ff0000;
 }
 
 .footer-social-link {
