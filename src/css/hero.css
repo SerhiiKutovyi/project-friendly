@@ -51,7 +51,6 @@
 
     .hero-wrapper {
         display: flex;
-        flex-wrap: wrap;
     }
 
     .hero-title {
@@ -67,13 +66,7 @@
     }
 
     .hero-btn {
-        width: 150px;
-        height: 50px;
-        margin-bottom: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
+        display: inline-block;
         margin-bottom: 0;
     }
 
@@ -83,6 +76,7 @@
         width: 704px;
         height: 267px;
     }
+    
 }
 
 @media screen and (min-width: 1440px) {
@@ -107,7 +101,4 @@
         height: 498px;
     }
 
-    .hero-btn {
-        margin-bottom: 0;
-    }
 }
