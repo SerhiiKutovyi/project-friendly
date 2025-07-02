@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-friendly/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-friendly/assets/main-gYARRXtN.css">
+    <link rel="stylesheet" crossorigin href="/project-friendly/assets/main-CKTcIpYO.css">
   </head>
   <body>
     <header class="page-header" id="top">
@@ -748,7 +748,7 @@
             name="user-name"
             id="user-name"
             placeholder="Іван"
-            minlength="2"
+            minlength="5"
             maxlength="64"
             required
           />
@@ -771,6 +771,7 @@
         </div>
         <div class="support-form-wraper">
           <label class="support-form-text" for="user-text">Повідомлення</label>
+
           <textarea
             class="support-form-textarea"
             name="user-text"
@@ -778,30 +779,11 @@
             placeholder="Введіть своє повідомлення..."
             maxlength="500"
           ></textarea>
-          <p class="error-text">Error text</p>
         </div>
         <button class="support-submit-btn btn" type="submit">Надіслати</button>
       </form>
     </div>
-    <picture>
-      <source
-        media="(min-width: 1440px)"
-        srcset="/project-friendly/assets/ecobag-desk-min-CUmEtpyW.jpg 1x, /project-friendly/assets/ecobag-desk@2x-min-Dir3sDLe.jpg 2x"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="/project-friendly/assets/ecobag-tab-min-ClZ-bWn5.jpg 1x, /project-friendly/assets/ecobag-tab@2x-min-BnQs0NQL.jpg 2x"
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="/project-friendly/assets/ecobag-mob-min-DcomMUP7.jpg 1x, /project-friendly/assets/ecobag-mob@2x-min-B2TC-2C3.jpg 2x"
-      />
-      <img
-        class="support-img"
-        src="/project-friendly/assets/ecobag-desk-min-CUmEtpyW.jpg"
-        alt="A studio space with eco tote bag on a work table."
-      />
-    </picture>
+    <div class="img-container"></div>
   </div>
 </section>
 
@@ -900,7 +882,6 @@
       <svg class="icon-arrow" width="24" height="24">
         <use href="/project-friendly/assets/icons-BDYUUFp1.svg#icon-compass"></use></svg
     ></a>
-
     <script src="./js/form-validation.js"></script>
   </body>
 </html>
