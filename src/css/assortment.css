@@ -1,10 +1,10 @@
-.assortment-container {
+.assortment {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .assortment-container {
+  .assortment {
     padding-top: 64px;
     padding-bottom: 64px;
   }
