@@ -13,11 +13,11 @@
 }
 
 .support-form-wraper {
-    position: relative;
+  position: relative;
 }
 
 .support-form-text {
-    display: block;
+  display: block;
   margin-bottom: 8px;
 }
 
@@ -33,23 +33,22 @@
 }
 
 .error-text {
-    display: none;
-    position: absolute;
-        left: 0;
-        bottom: 4px;
-font-size: 12px;
-    color: #d64040;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  font-size: 12px;
+  color: #d64040;
 }
-
 
 .support-form-input::placeholder,
 .support-form-textarea::placeholder {
-        color: rgba(3, 10, 6, 0.6);
+  color: rgba(3, 10, 6, 0.6);
 }
 
 .support-form-input:focus::placeholder,
 .support-form-textarea:focus::placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 
 .support-form-input:not(:placeholder-shown):invalid {
@@ -60,7 +59,6 @@ font-size: 12px;
   display: block;
 }
 
-
 .support-form-textarea {
   width: 100%;
   height: 180px;
@@ -70,19 +68,19 @@ font-size: 12px;
   background-color: rgba(3, 10, 6, 0.05);
   resize: none;
   margin-bottom: 24px;
-outline: transparent;
+  outline: transparent;
 }
 
 .support-submit-btn {
-    margin-bottom: 24px;
-    width: 288px;
-    height: 50px;
+  margin-bottom: 24px;
+  width: 288px;
+  height: 50px;
 }
 
 .img-container {
   width: 100%;
   height: 428px;
-  background-image: url(/img/support/ecobag-mob-min.jpg);
+  background-image: url(/img/support/ecobag-desk-min.jpg);
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
@@ -95,20 +93,19 @@ outline: transparent;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .support-section {
     padding-top: 64px;
     padding-bottom: 64px;
   }
 
-    .support-title {
-      width: 468px;
-    }
+  .support-title {
+    width: 468px;
+  }
 
-        .support-submit-btn {
-          width: 249px;
-        }
-
+  .support-submit-btn {
+    width: 249px;
+  }
 }
 
 .img-container {
@@ -117,32 +114,32 @@ outline: transparent;
 
 @media screen and (min-resolution: 2x) {
   .img-container {
-      background-image: url(/img/support/ecobag-tab@2x-min.jpg);
-    }
+    background-image: url(/img/support/ecobag-tab@2x-min.jpg);
+  }
 }
 
-@media screen and (min-width:1440px) {
-  .support-container{
+@media screen and (min-width: 1440px) {
+  .support-container {
     display: flex;
     gap: 24px;
   }
-.support-title {
-  font-size: 48px;
-width: 644px;
-}
-
-.support-submit-btn {
-  width: 198px;
-}
-
-.img-container {
-  height: 767px;
-  background-image: url(/src/img/support/ecobag-desk-min.jpg);
-}
-
-@media screen and (min-resolution: 2x) {
-  .img-container {
-    background-image: url(/img/support/ecobag-desk@2x-min.jpg);
+  .support-title {
+    font-size: 48px;
+    width: 644px;
   }
-}
+
+  .support-submit-btn {
+    width: 198px;
+  }
+
+  .img-container {
+    height: 767px;
+    background-image: url(/img/support/ecobag-desk-min.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .img-container {
+      background-image: url(/img/support/ecobag-desk@2x-min.jpg);
+    }
+  }
 }
