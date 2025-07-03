@@ -12,15 +12,12 @@
   margin-bottom: 32px;
 }
 
-.support-form {
-}
-
 .support-form-wraper {
-    position: relative;
+  position: relative;
 }
 
 .support-form-text {
-    display: block;
+  display: block;
   margin-bottom: 8px;
 }
 
@@ -36,33 +33,32 @@
 }
 
 .error-text {
-    display: none;
-    position: absolute;
-        left: 0;
-        bottom: 4px;
-font-size: 12px;
-    color: #d64040;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  font-size: 12px;
+  color: #d64040;
 }
-
 
 .support-form-input::placeholder,
 .support-form-textarea::placeholder {
-        color: rgba(3, 10, 6, 0.6);
+  color: rgba(3, 10, 6, 0.6);
 }
 
 .support-form-input:focus::placeholder,
 .support-form-textarea:focus::placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 
 input.invalid,
 textarea.invalid {
-    border-color:#d64040;
+  border-color: #d64040;
 }
 
 input.invalid::placeholder,
 textarea.invalid::placeholder {
-    color: #d64040;
+  color: #d64040;
 }
 
 .support-form-textarea {
@@ -74,47 +70,45 @@ textarea.invalid::placeholder {
   background-color: rgba(3, 10, 6, 0.05);
   resize: none;
   margin-bottom: 24px;
-outline: transparent;
+  outline: transparent;
 }
 
 .support-submit-btn {
-    margin-bottom: 24px;
-    width: 288px;
-    height: 50px;
+  margin-bottom: 24px;
+  width: 288px;
+  height: 50px;
 }
 
 .support-img {
-    border-radius: 40px;
+  border-radius: 40px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .support-section {
     padding-top: 64px;
     padding-bottom: 64px;
   }
 
-    .support-title {
-      width: 468px;
-    }
+  .support-title {
+    width: 468px;
+  }
 
-        .support-submit-btn {
-          width: 249px;
-        }
-
+  .support-submit-btn {
+    width: 249px;
+  }
 }
 
-@media screen and (min-width:1440px) {
-  .support-container{
+@media screen and (min-width: 1440px) {
+  .support-container {
     display: flex;
     justify-content: space-between;
   }
-.support-title {
-  font-size: 48px;
-width: 644px;
-}
+  .support-title {
+    font-size: 48px;
+    width: 644px;
+  }
 
-.support-submit-btn {
-  width: 198px;
+  .support-submit-btn {
+    width: 198px;
+  }
 }
-}
-

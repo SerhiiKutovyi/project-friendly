@@ -1,41 +1,71 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.support-form');
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    let formIsValid = true;
+  const nameInput = form.elements['user-name'];
+  const emailInput = form.elements['user-email'];
+  const messageInput = form.elements['user-text'];
 
-    const fields = form.querySelectorAll('input, textarea');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-    fields.forEach(field => {
-      const wrapper = field.closest('.support-form-wraper');
-      const errorText = wrapper.querySelector('.error-text');
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
 
-      if (!field.checkValidity()) {
-        field.classList.add('invalid');
-        errorText.style.display = 'block';
-        formIsValid = false;
-      } else {
-        field.classList.remove('invalid');
-        errorText.style.display = 'none';
+    let hasError = false;
+
+    // Очистити старі помилки
+    clearError(nameInput);
+    clearError(emailInput);
+    clearError(messageInput);
+
+    // Перевірка імені
+    if (name.length < 5) {
+      showError(nameInput, 'Ім’я повинно містити щонайменше 5 символів.');
+      hasError = true;
+    }
+
+    // Перевірка email
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email) {
+      showError(emailInput, 'Будь ласка, введіть email.');
+      hasError = true;
+    } else if (!emailPattern.test(email)) {
+      showError(emailInput, 'Email має некоректний формат.');
+      hasError = true;
+    }
+
+    if (hasError) return;
+
+    alert(`Дякуємо, ${name}! Ваше повідомлення надіслано.`);
+    form.reset();
+  });
+
+  function showError(inputElement, message) {
+    inputElement.classList.add('invalid');
+    const wrapper = inputElement.closest('.support-form-wraper');
+    const errorText = wrapper.querySelector('.error-text');
+    if (errorText) {
+      errorText.textContent = message;
+      errorText.style.display = 'block';
+    }
+  }
+
+  function clearError(inputElement) {
+    inputElement.classList.remove('invalid');
+    const wrapper = inputElement.closest('.support-form-wraper');
+    const errorText = wrapper.querySelector('.error-text');
+    if (errorText) {
+      errorText.textContent = '';
+      errorText.style.display = 'none';
+    }
+  }
+
+  //
+  [nameInput, emailInput, messageInput].forEach(input => {
+    input.addEventListener('input', () => {
+      if (input.classList.contains('invalid')) {
+        clearError(input);
       }
     });
-
-    if (formIsValid) {
-      console.log('✅ Форма валідна. Очищення...');
-
-      // Очистка полів
-      form.reset();
-
-      // Також прибираємо всі класи та повідомлення
-      fields.forEach(field => {
-        field.classList.remove('invalid');
-        const wrapper = field.closest('.support-form-wraper');
-        const errorText = wrapper.querySelector('.error-text');
-        errorText.style.display = 'none';
-      });
-
-      // Якщо хочеш — можеш показати повідомлення "Форму надіслано"
-    }
   });
 });
